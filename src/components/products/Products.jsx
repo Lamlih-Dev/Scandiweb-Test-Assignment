@@ -29,7 +29,7 @@ function Product({product, productsToDelete, setProductsToDelete}){
       <p>{product.name}</p>
       <p>{parseFloat(product.price).toFixed(2)} $</p>
       {productInfo}
-      <input type="checkbox" className='delete-checkbox' value={product.id} onChange={(e)=>handleCheckbox(e)}/>
+      <input type="checkbox" name='delete-checkbox' className='delete-checkbox' value={product.id} onChange={(e)=>handleCheckbox(e)}/>
     </div>
   )
 }
@@ -70,8 +70,8 @@ function Products() {
         <div className="products-header d-flex justify-content-between">
           <h1>Product List</h1>
           <div className="actions">
-            <Link to ="/add-product" className='btn btn-secondary'>ADD</Link>
-            <button id='delete-product-btn' className='btn btn-danger' onClick={deleteProducts}>MASS DELETE</button>
+            <Link to ="/add-product" className='btn btn-secondary ADD' name="ADD">ADD</Link>
+            <button id='delete-product-btn' className='btn btn-danger' name="MASS DELETE" onClick={deleteProducts}>MASS DELETE</button>
           </div>
         </div>
         <hr className='m-0'/>
