@@ -1,0 +1,31 @@
+.add-product{
+    .add-product-header{
+        .actions{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+    }   
+    #product_form{
+        width: 40%;
+        input,select,.text-validation{
+            margin-left: 50px;
+        }
+        td:nth-child(1){
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            label{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    #product_form{
+        width: 100% !important;
+    }
+}
