@@ -166,7 +166,7 @@ function AddProduct() {
           <h1>Product Add</h1>
           <div className="actions">
             <button id='' className='btn btn-primary' onClick={addProduct}>Save</button>
-            <Link to ="/" className='btn btn-secondary'>Cancle</Link>
+            <Link to ="/" className='btn btn-secondary'>Cancel</Link>
           </div>
         </div>
         <hr className='m-0'/>
