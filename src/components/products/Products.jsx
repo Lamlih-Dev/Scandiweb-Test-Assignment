@@ -70,8 +70,8 @@ function Products() {
         <div className="products-header d-flex justify-content-between">
           <h1>Product List</h1>
           <div className="actions">
-            <Link to ="/add-product" className='btn btn-secondary ADD' name="ADD">ADD</Link>
-            <button id='delete-product-btn' className='btn btn-danger' name="MASS DELETE" onClick={deleteProducts}>MASS DELETE</button>
+            <Link to ="/add-product" className='btn btn-secondary' aria-label="ADD">ADD</Link>
+            <button id='delete-product-btn' className='btn btn-danger' aria-label="MASS DELETE" onClick={deleteProducts}>MASS DELETE</button>
           </div>
         </div>
         <hr className='m-0'/>
